@@ -1,0 +1,63 @@
+===================================
+*                                 *
+*         (A) Plugin              *
+*                                 *
+===================================
+(1) Install JDK (not JRE)
+    |__ In Eclipse:
+	    -- Window => Preference => Java => Installed JREs ==> Select the downloaded JDK
+
+(2) Eclipse plugin
+|
+|__ Eclipse Buildship
+    |__ How to show "gradle view":
+	    |__ Window => Show View => Other => Gradle => Gradle Tasks
+		
+
+
+
+===================================
+*                                 *
+*         (B) Configure           *
+*                                 *
+===================================
+(1) Add gradle configuration:
+    Eclipse
+    (i) right-click your project, a context menu pop up
+	(ii) select "Configure" in the context menu
+	(iii) select "Add Gradle nature"
+
+
+(2) Set gradle configuration
+    Eclipse
+	(i) Run -> Run Configuration
+	(ii) Select "Gradle Task"
+	(iii) Click the icon on the upper left corner which said "new launch configuration"
+	(iv) set the configuration name
+	(v) set the working directory
+	(vi) in "Gradle Tasks", write down the task name
+	(vii) click "apply" and "run"
+
+
+(3) Run Default Task
+    Eclipse
+	(i) inside the gradle script, ass the default task at the beginning of script file as follows:
+	     defaultTasks '[type your default task name here]'
+	(ii) in the "Gradle Tasks" view, right click on your project, a context menu pop up
+	(iii) click "Run Default Fradle Tasks"
+	OR
+	(i) on the task menu, inside the "run" icon, select the configuration that you want to run
+	
+
+	
+===================================
+*                                 *
+*         (C) Syntax              *
+*                                 *
+===================================
+(A) Function
+    |__ if it return a value, there is no need to type "return" keyword. 
+	    The last statment being executed is supposed to return the value.
+	|__ However, if a keyword "return" appears before the last statement, the value following the "return" will be immediately returned.
+	
+
