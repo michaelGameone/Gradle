@@ -61,3 +61,66 @@
 	|__ However, if a keyword "return" appears before the last statement, the value following the "return" will be immediately returned.
 	
 
+===================================
+*                                 *
+*         (D) Gradle Object       *
+*                                 *
+===================================
+
+Gradle API (interface/classes)
+|__ (i) Script <Interface>
+        |__ logger function
+		    |__ add "-i" in the configuration argument
+			    |__ "Run" => "Run Configuration" => In "Project Setting" tab, check "Override project settings" box, 
+				     Then add "-i" in "Program Arguments" session
+
+
+|__ (ii) Project <Interface>
+
+
+|__ (iii) Gradle <Interface>
+
+|__ (iv) Settings <Interface>
+
+
+|__ (V) Task <Interface>
+
+
+|__ (Vi> Action <Interface>
+
+
+===================================
+*                                 *
+*     (E) Gradle Life Cycle       *
+*                                 *
+===================================
+(I) Initialization
+|__ (a) The File it involves ==> init.gradle and other file with "gradle" extension (except "settings" and "build")
+        |__ The files will be executed in alphabetical order 
+        |__ The delegate it access: gradle
+
+|__ (b) The File it involves ==> settings.gradle
+        |__ The delegate it access: gradle, settings
+
+(II) Configuration phase
+|__ (a) The File it involves ==> build.gradle
+        |__ The delegate it access: gradle, project
+
+
+(III) Execution phase
+- execute the tasks
+
+
+*** "gradle" files location ***
+Gradle files should be put under the following folder:
+(1) "settings.gradle" and "build.gradle" ==> inside ".gradle" folder  
+(2) "init.gradle" ==> inside ".gradle/init.d" folder
+(3) other gradle files ==> inside ".gradle/init.d" folder
+
+
+
+
+
+
+
+
