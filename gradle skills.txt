@@ -1,3 +1,10 @@
+Official Training Course
+|__ https://docs.gradle.org/current/userguide/getting_started_eng.html#introduction
+
+Other learning resources:
+|__ https://www.javatpoint.com/gradle
+
+
 ===================================
 *                                 *
 *         (A) Plugin              *
